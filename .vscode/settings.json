@@ -1,0 +1,44 @@
+{
+    "latex-workshop.latex.outDir": "../../output", // with reference to mamuscript/src -> ../../
+    "latex-workshop.latex.tools": [
+      {
+        "name": "latexmk",
+        "command": "latexmk",
+        "args": [
+          "-synctex=1",
+          "-interaction=nonstopmode",
+          "-file-line-error",
+          "-pdf",
+          "-outdir=../../output",
+          "%DOC%"
+        ]
+      },
+      {
+        "name": "pdflatex",
+        "command": "pdflatex",
+        "args": [
+          "-synctex=1",
+          "-interaction=nonstopmode",
+          "-file-line-error",
+          "-output-directory=../../output",
+          "%DOC%"
+        ]
+      }
+    ],
+  
+    "latex-workshop.latex.recipes": [
+      {
+        "name": "latexmk (out dir)",
+        "tools": ["latexmk"]
+      },
+      {
+        "name": "pdflatex -> bibtex -> pdflatex*2 (out dir)",
+        "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
+      }
+    ],
+  
+    // Optional: Auto clean up output files (optional)
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.autoClean.deleteLogs": true
+  }
+  
