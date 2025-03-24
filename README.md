@@ -1,6 +1,6 @@
 # Reproducible research 
 
-This project is a modified version by [Federico Tartarini](https://github.com/FedericoTartarini/reproducible-research)
+This project is a modified version of  [Reproducible research by Federico Tartarini](https://github.com/FedericoTartarini/reproducible-research)
 
 Based on the Elsevier's new document class for typeset journal articles,
 elsarticle.cls which is accepted for submitted articles, both in
